@@ -1,5 +1,6 @@
 import { Container, Row, Col } from 'reactstrap';
-import React from 'react'
+import React from 'react';
+import SurgicalHands from '../shared/images/surgical-hands.jpg';
 
 export default function About() {
   return (
@@ -13,7 +14,7 @@ export default function About() {
                     </p>
                 </Col>
                 <Col className='my-auto mx-auto'>
-                    <img className='medical-img' src='./shared/images/surgical-hands.png' width='100%' alt='Surgical instrument handling' />
+                    <div className='medical-img' src={SurgicalHands} alt='Surgical instrument handling' />
                 </Col>
             </Row>
         </Container>
