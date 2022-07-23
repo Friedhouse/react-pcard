@@ -1,5 +1,6 @@
 import { Container, Row, Col } from 'reactstrap';
 import React from 'react'
+import ContactForm from '../components/ContactForm';
 
 export default function Comments() {
   return (
@@ -13,6 +14,7 @@ export default function Comments() {
                 <p>Questions, comments, or would you like to see a certain feature? Shoot myself and the team a message below and let us know. If you just want to let us know how much you love the app, that's cool too.</p>
                 </Col>
             </Row>
+            <ContactForm />
         </Container>
     </div>
   )
