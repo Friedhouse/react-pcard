@@ -4,7 +4,7 @@ import React from 'react'
 export default function Comments() {
   return (
     <div>
-        <Container>
+        <Container id='contact'>
             <Row className="row-content">
                 <Col className='col-12'>
                     <h3>Get In Touch</h3>
