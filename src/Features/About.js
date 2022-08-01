@@ -14,7 +14,7 @@ export default function About() {
                     </p>
                 </Col>
                 <Col className='my-auto mx-auto'>
-                    <div className='medical-img' src={SurgicalHands} alt='Surgical instrument handling' />
+                    <img className='medical-img' src={SurgicalHands} width='100%' alt='Surgical instrument handling' />
                 </Col>
             </Row>
         </Container>
