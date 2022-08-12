@@ -17,7 +17,7 @@ const Header = () => {
                 type='button'
                 color='primary' 
                 onClick={() => {
-                    window.location.href='/examplecard'
+                    window.location.href='/examplepage'
                 }}
             
             >

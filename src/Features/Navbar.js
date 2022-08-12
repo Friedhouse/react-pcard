@@ -31,12 +31,12 @@ const Navigation = () => {
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href='#'>
+                        <NavLink href='features'>
                             Features
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href='#'>
+                        <NavLink href='about'>
                             About
                         </NavLink>
                     </NavItem>
@@ -51,13 +51,13 @@ const Navigation = () => {
                             <DropdownItem href="#">
                                 Public
                             </DropdownItem>
-                            <DropdownItem href="#">
+                            <DropdownItem href="example">
                                 Examples
                             </DropdownItem>
                         </DropdownMenu>
                     </UncontrolledDropdown>
                     <NavItem>
-                        <NavLink href='#'>
+                        <NavLink href='contact'>
                             Contact
                         </NavLink>
                     </NavItem>       

@@ -51,6 +51,28 @@ form {
   color: rgb(10, 10, 10);
   align-items: center;
 }
+.add-input {
+  width: 95%;
+  height: 40px;
+  outline: none;
+  border: 1px solid #676767;
+  border-radius: 0px;
+  padding: 10px;
+}
+.grid-main {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  color: whitesmoke;
+  margin-top: 20px;
+  gap: 20px;
+  justify-content: center;
+}
+.grid-child {
+  padding: 20px;
+  background-color: rgb(36, 67, 176);
+  width: 200px;
+  cursor: pointer;
+}
 .features {
   margin-top: 20px;
 }
@@ -70,6 +92,13 @@ form {
 }
 .p-body {
   margin-top: 50px;
+}
+.btn-style {
+  height: 40px;
+  width: 200px;
+  background-color: #ffc107;
+  border: none;
+  cursor: pointer;
 }
 .btn-style:hover { 
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
