@@ -67,6 +67,7 @@ export default function Docs({
             </button>
           </div>  
         </DocModal>
+        
 
 {/* Mapping over array for data to show up in UI */}
         <div className='grid-main'>

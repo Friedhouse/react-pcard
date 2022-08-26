@@ -37,6 +37,11 @@ export default function DocModal({
                     onChange={(event) => setTitle(event.target.value)}
                     value={title}
                 />
+                <div className='row-content'>
+                    <button className='btn-style'>
+                        Add
+                    </button>
+          </div>  
             </Box>
         </Modal>
     </div>
