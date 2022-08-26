@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import DocModal from './DocModal';
 import { addDoc, collection, onSnapshot } from 'firebase/firestore';
+import { useNavigate } from 'react-router-dom';
 
 export default function Docs({
   database //Prop to receive data for database
@@ -13,6 +14,7 @@ export default function Docs({
   const collectionRef = collection(database, 'docsdata'); //collection reference for DB
   const isMounted = useRef() //gets rid of concurrent rendering on useEffect
   const [docsData, setDocsData] = useState([]); //state of docsData
+  let navigate = useNavigate(); //to send ID of doc to editDocs
 
 //addData will take collection reference and data to DB from input
   const addData = () => {
@@ -45,6 +47,11 @@ export default function Docs({
     getData()
   }, []);
 
+//Retrieves ID of doc for editing
+  const getId = (id) => {
+    navigate(`/editDocs/${id}`)
+  }
+
 
   return (
     <div className='row-content'>
@@ -73,7 +80,7 @@ export default function Docs({
         <div className='grid-main'>
           {docsData.map((doc) => {
             return (
-              <div className='grid-child'>
+              <div className='grid-child' onClick={() => getId(doc.id)}>
                 <p>{doc.title}</p>
               </div>
             )
